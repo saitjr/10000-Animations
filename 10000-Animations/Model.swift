@@ -8,7 +8,16 @@
 
 import Foundation
 
+enum ActionType: String {
+    case push = "push"
+    case present = "present"
+}
+
 struct Model {
     var title: String
     var type: AnyClass
+    var status: Bool
+    var description: String = ""
+    
+    var action: ActionType = .push
 }

@@ -33,6 +33,7 @@
 		09E7EDA21DEE77E500AA5BF9 /* _00003_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E7EDA11DEE77E500AA5BF9 /* _00003_ViewController.swift */; };
 		09E7EDA41DEE79A600AA5BF9 /* _00003_RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E7EDA31DEE79A600AA5BF9 /* _00003_RegisterViewController.swift */; };
 		09E7EDA61DEE7A3200AA5BF9 /* _00003_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E7EDA51DEE7A3200AA5BF9 /* _00003_TextField.swift */; };
+		09E7EDB61DF0378800AA5BF9 /* _00003_UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E7EDB51DF0378800AA5BF9 /* _00003_UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		09E7EDA11DEE77E500AA5BF9 /* _00003_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _00003_ViewController.swift; sourceTree = "<group>"; };
 		09E7EDA31DEE79A600AA5BF9 /* _00003_RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _00003_RegisterViewController.swift; sourceTree = "<group>"; };
 		09E7EDA51DEE7A3200AA5BF9 /* _00003_TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _00003_TextField.swift; sourceTree = "<group>"; };
+		09E7EDB51DF0378800AA5BF9 /* _00003_UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _00003_UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				09E7ED9F1DEE77CC00AA5BF9 /* _00003_LoginViewController.swift */,
 				09E7EDA31DEE79A600AA5BF9 /* _00003_RegisterViewController.swift */,
 				09E7EDA51DEE7A3200AA5BF9 /* _00003_TextField.swift */,
+				09E7EDB51DF0378800AA5BF9 /* _00003_UIHelper.swift */,
 			);
 			path = "00003-LoginRegisterSwitcher";
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				09D774AA1D8F9E7200C372AC /* STTool+Notification.swift in Sources */,
 				09DE23B51D8C2AB5009E3043 /* STTool.swift in Sources */,
 				09E7EDA61DEE7A3200AA5BF9 /* _00003_TextField.swift in Sources */,
+				09E7EDB61DF0378800AA5BF9 /* _00003_UIHelper.swift in Sources */,
 				09DE23C61D8D7B8E009E3043 /* STTool+String.swift in Sources */,
 				095645BE1D8BEC0800204565 /* Model.swift in Sources */,
 				09DE23BD1D8D6C30009E3043 /* STTool+Image.swift in Sources */,

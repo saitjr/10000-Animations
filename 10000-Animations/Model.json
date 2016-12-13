@@ -1,14 +1,19 @@
 [
     {
         "title" : "Parallax Effect",
-        "type" : "_00001_ViewController"
+        "type" : "_00001_ViewController",
+        "status" : "1",
+        "description" : "run on device, not simulator"
     },
     {
         "title" : "Char Bubbles",
-        "type" : "_00002_ViewController"
+        "type" : "_00002_ViewController",
+        "status" : "0"
     },
     {
+        "action" : "present",
         "title" : "Login Register Switcher",
-        "type" : "_00003_ViewController"
+        "type" : "_00003_ViewController",
+        "status" : "0"
     }
 ]

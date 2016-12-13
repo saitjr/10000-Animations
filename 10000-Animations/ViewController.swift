@@ -47,7 +47,11 @@ extension ViewController {
             guard let anyClass = st.classFromString(name: dict["type"] ?? "") else {
                 continue
             }
-            let model = Model(title: dict["title"] ?? "", type: anyClass)
+            let title: String = dict["title"] ?? ""
+            let status: Bool = dict["status"] ?? "" == "1"
+            let description: String = dict["description"] ?? ""
+            let action: ActionType = ActionType(rawValue: dict["action"] ?? "push")!
+            let model = Model(title: title, type: anyClass, status: status, description: description, action: action)
             dataSource.append(model)
         }
     }
@@ -55,9 +59,11 @@ extension ViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Const.cellIdentifier) ?? UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: Const.cellIdentifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: Const.cellIdentifier)
         cell.textLabel?.font = UIFont(name: ProjectConfig.lightFontName, size: 20)
         cell.textLabel?.text = dataSource[indexPath.row].title
+        cell.detailTextLabel?.text = (dataSource[indexPath.row].status ? "done!" : "not finish yet") + "  " + dataSource[indexPath.row].description
+        cell.detailTextLabel?.textColor = dataSource[indexPath.row].status ? .gray : .red
         cell.selectionStyle = .none
         return cell
     }
@@ -74,6 +80,10 @@ extension ViewController: UITableViewDelegate {
         }
         let vc = type.init()
         vc.title = dataSource[indexPath.row].title
-        navigationController?.pushViewController(vc, animated: true)
+        if dataSource[indexPath.row].action == .push {
+            navigationController?.pushViewController(vc, animated: true)
+        } else {
+            navigationController?.present(vc, animated: true, completion: nil)
+        }
     }
 }

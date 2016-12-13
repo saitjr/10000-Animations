@@ -44,7 +44,7 @@ class _00002_ViewController: UIViewController {
         view.addSubview(animateCell)
         
         let cellLeftTopConter = animateCell.frame.origin
-        let cellRightTopConter = CGPoint(x: animateCell.st.maxWidth, y: animateCell.st.y)
+        let cellRightTopConter = CGPoint(x: animateCell.st.maxX, y: animateCell.st.y)
 
         let path = UIBezierPath()
         path.move(to: cellLeftTopConter)
@@ -147,7 +147,7 @@ class HeadView: UIView {
         avatarImageView.layer.cornerRadius = avatarImageView.st.halfHeight
         avatarImageView.layer.masksToBounds = true
         
-        nameLabel.frame = CGRect(x: avatarImageView.st.maxWidth + 10, y: avatarImageView.st.y, width: 200, height: 20)
+        nameLabel.frame = CGRect(x: avatarImageView.st.maxX + 10, y: avatarImageView.st.y, width: 200, height: 20)
         descriptionLabel.frame = nameLabel.frame.offsetBy(dx: 0, dy: 20)
         
         addSubview(avatarImageView)

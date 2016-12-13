@@ -8,11 +8,23 @@
 
 import UIKit
 
+protocol _00003_RegisterViewControllerDelegate {
+    func switchToRegister()
+}
+
 class _00003_RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        setupUI()
+    }
+}
+
+extension _00003_RegisterViewController {
+    fileprivate func setupUI() {
+        view.backgroundColor = .red
     }
 }

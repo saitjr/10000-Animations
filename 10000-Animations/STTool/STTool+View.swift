@@ -8,6 +8,16 @@
 
 import UIKit
 
+extension STTool {
+    func screenWidth() -> CGFloat {
+        return UIScreen.main.bounds.width
+    }
+    
+    func screenHeight() -> CGFloat {
+        return UIScreen.main.bounds.height
+    }
+}
+
 extension STTool where Base: UIView {
     var x: CGFloat {
         get {
@@ -63,13 +73,13 @@ extension STTool where Base: UIView {
         }
     }
     
-    var maxWidth: CGFloat {
+    var maxX: CGFloat {
         get {
             return base.frame.size.width + base.frame.origin.x
         }
     }
     
-    var maxHeight: CGFloat {
+    var maxY: CGFloat {
         get {
             return base.frame.size.height + base.frame.origin.y
         }
